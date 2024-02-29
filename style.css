@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+}
+html{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+body{
+    max-height: 150vh;
+    height: 100vh;
+    width: 100vw;
+ 
+    display: flex;
+    align-items: center;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    overflow-x: hidden;
+    /* justify-content: center; */
+    /* border: 2px solid black; */
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  
+body div{
+    /* border: 2px solid black; */
+}
+.splash{
+width: 60%;
+min-height: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content:flex-start;
+padding: 0;
+position: relative;
+/* background-image: url(/media/shape.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: left bottom; */
+
+}
+.splash .mess-con{
+    margin-left:5em;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60%;
+    color: white;
+    z-index: 2;
+    position: absolute;
+   
+   
+
+}
+.mess-con div{
+    /* border: 2px solid wheat; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+.mess-con .mess-title{
+    font-size: 5em;
+    text-transform: uppercase;
+    font-weight: 300;
+    flex: 3;
+    align-items: center;
+    padding:0.5em ;
+    
+
+}
+.mess-con .mess-para{
+    font-size: 1.8em;
+    text-align: center;
+    text-transform: capitalize;
+    flex: 2;
+    align-items: flex-start;
+    line-height: 1.4em;
+}
+.splash .shape{
+max-width: 100%;
+min-height:100% ;
+max-height: 120%;
+margin: 0;
+/* border: 2px solid blue; */
+z-index: -1;
+position: absolute;
+
+}
+.form-con{
+width: 40%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+
+
+}
+
+#alert-con{
+    flex: 1;
+    width: 80%;
+    max-height: 20%;
+    min-height: 8%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 7em;
+    display: none;
+
+}
+#alert-mess{
+    width: 85%;
+    height: 100%;
+    border-radius: 0 0.5em 0.5em 0;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    background-color: #FA8585;
+    font-size: 1.1em;
+}
+#close{
+width: 15%;
+height: 100%;
+background-color: #F41828;
+color: white;
+font-size: 1.2em;
+border: none;
+font-weight: 500;
+cursor: pointer;
+
+}
+.form-con div{
+    /* border: 2px solid red; */
+    width: 90%;
+    height: 15%;
+}
+.form-con form{
+flex: 4;
+/* border: 2px solid red; */
+max-height: 80%;
+width: 80%;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-direction: column;
+font-size: 1.4em;
+font-weight: 300;
+padding: 2em;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+border-radius: 0.5em;
+margin-bottom: 2em;
+margin-top: 2em;
+}
+
+
+
+form .details{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 50%;
+flex-direction: column;
+width: 90%;
+padding: 0.5em;
+
+}
+.details input{
+    width: 100%;
+    height: 10%;
+    border: none;
+    border-bottom:  2px solid #FA8585;
+    font-size: 1em;
+    font-weight: 300;
+    font-family: "Rubik", sans-serif;
+    outline: none;
+    margin: 0.2em;
+} 
+.details  label{
+margin: 0.2em;
+color: #F41828;
+}
+.add-details{
+    display: flex;
+    flex-direction: column;
+    min-height: 30%;
+    margin-top: 0.5em;
+}
+.add-details div{
+    flex: 1;
+    /* border: 2px solid black; */
+
+}
+.add-details .dob {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    min-height: 70%;
+    margin-top:0.25em;
+    padding: 0.25em;
+    
+
+    
+}
+.add-details .dob label{
+color: #F41828;
+padding-bottom: 0.5em;
+
+}
+.dob input{
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+border: 2px solid #F41828;
+outline: none;
+height: 60%;
+accent-color: #FA8585;
+text-align: center;
+font-size: 0.9em;
+font-weight: 300;
+margin-bottom: 0.5em;
+padding: 0.5em;
+margin-top: 0.5em;
+color: #F41828;
+}
+.dob input :checked{
+    background-color: #FA8585;
+}
+.gender{
+    width: 100%;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-evenly;
+}
+.gender label{
+    margin-left: 0.1em;
+    font-size: 0.9em;
+}
+.gender :first-child{
+    color: #F41828;
+}
+
+.gender input{
+outline: none;
+border: none;
+padding: 1em;
+margin: 0.1em;
+
+}
+.gender input:checked{
+    accent-color: #FA8585;
+    outline: none;
+    font-weight: 100;
+    appearance: none;
+    background-color: #FA8585;
+    border-radius: 25px;
+    scale: 0.5;
+}
+.tandc{
+    margin-top: 0.5em;
+    max-height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tandc label{
+    padding: 0.3em;
+    
+}
+.tandc input[type="checkbox"]{
+    max-width: 7%;
+    min-width: 7%;
+    max-height: 50%;
+    min-height: 50%;
+   box-shadow: none;
+  outline: none;
+    border: none;
+    
+    
+
+
+}
+.tandc input[type="checkbox"]:checked{
+    accent-color: #FA8585;
+    background-size: cover;
+    color: white;
+}
+ form button{
+
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 2px solid #F41828;
+    color: #F41828;
+    background: 0 0;
+    padding: 0.5em;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 4px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1.5px 0px;
+    font-weight: 400;
+    font-size: 0.9em;
+    height:8%;
+    width: 20%;
+    margin: 0.9em;
+   
+    
+}
+
+form button:hover{
+    background-color: #F41828;
+    color: #fff;
+
+}
+@media only screen and (max-width: 800px) {
+body{
+    flex-direction: column;
+    
+}
+.splash{
+
+    min-height: 50%;
+    max-height: 60%;
+    min-width: 100%;
+    flex: 3;
+    align-items: center;
+    /* border: 2px solid  #F41828; */
+    font-size: 1em;
+
+
+
+}
+.splash div{
+    /* border: 2px solid black; */
+}
+.splash img{
+
+    /* transform:scaleY(-1); */
+     transform:scaleY(-1); 
+    min-width: 100%;
+    /* border: 2px solid blue; */
+
+}
+.form-con{
+    width: 90%;
+   flex: 7;
+   
+}
+.details{
+    margin-top: 2em;
+}
+.mess-con{
+    min-width:20% ;
+    max-width: 30%;
+}
+}

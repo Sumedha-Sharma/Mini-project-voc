@@ -173,6 +173,7 @@ form .details{
 flex-direction: column;
 width: 90%;
 padding: 0.5em;
+margin-top: 2em;
 
 }
 .details input{
@@ -215,6 +216,7 @@ color: #F41828;
 .add-details .dob label{
 color: #F41828;
 padding-bottom: 0.5em;
+
 
 }
 .dob input{
@@ -338,7 +340,14 @@ body{
 
 
 }
-.splash div{
+form{
+    margin-top: 2em;
+    
+}
+.add-details .dob label{
+    margin-top: 0.5em;
+}
+form div{
     /* border: 2px solid black; */
 }
 .splash img{
@@ -346,6 +355,7 @@ body{
     /* transform:scaleY(-1); */
      transform:scaleY(-1); 
     min-width: 100%;
+    height: 100%;
     /* border: 2px solid blue; */
 
 }
@@ -354,11 +364,16 @@ body{
    flex: 7;
    
 }
+
 .details{
-    margin-top: 2em;
+    margin-top: 3em;
+    
 }
 .mess-con{
     min-width:20% ;
     max-width: 30%;
+}
+.dob{
+    padding-top: 1em;
 }
 }
